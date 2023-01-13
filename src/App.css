@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.auction {
+  padding-left: 40px;
+  padding-top: 80px;
+}
+
+.auction__title,
+.auction__title span {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 36px;
+  color: rgb(226, 59, 67);
+}
+
+.auction__title {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.auction__title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(237, 234, 234);
+}
+
+.auction__title span {
+  font-weight: normal;
+}
+
+.aution__message {
+  color: rgb(211, 110, 143);
+  background-color: rgb(247, 234, 234);
+  padding: 7px 5px;
+  margin: 40px 0;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  width: 20%;
+  padding: 12px 0 12px 12px;
+}
+
+.table__title-container {
+  border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.table .table__title {
+  color: rgb(158, 190, 202);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.table__title ~ td {
+  color: rgb(158, 190, 202);
+}
+
+.table tr {
+  text-align: center;
+}
+
+.table tr:nth-child(2n + 3) {
+  background-color: rgb(229, 229, 229);
+}
+
+.table td {
+  width: 18%;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(234, 215, 215);
+  width: 100%;
+  color: rgb(198, 125, 125);
+  border-radius: 4px;
+  position: relative;
+}
+
+.timer img {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
+}
+
+.price {
+  color: rgb(122, 171, 214); 
+  font-weight: bold;
+} 
+
+.price__step {
+  color:rgb(226, 59, 67);
+  font-weight: bold;
+}
+
+.price__final {
+  color: rgb(104, 158, 107);
+  font-weight: bold;
+}
